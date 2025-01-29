@@ -1,0 +1,20 @@
+[package]
+name = "fluent_iced_gallery"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.13", features = ["canvas", "image", "svg", "web-colors"] }
+
+iced_aw = { version = "0.11.0", default-features = false, features = [
+    "drop_down",
+    "menu",
+    "number_input",
+    "quad",
+    "sidebar",
+    "tab_bar",
+    "typed_input",
+    "wrap",
+] }
+
+num-traits = { version = "0.2.19" }

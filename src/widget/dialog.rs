@@ -16,7 +16,7 @@ pub fn content<'a, Message>(
     primary_button: Option<Button<Message>>,
     secondary_button: Option<Button<Message>>,
     close_button: Button<Message>,
-) -> Container<Message>
+) -> Container<'a, Message>
 where
     Message: 'a + Clone,
 {

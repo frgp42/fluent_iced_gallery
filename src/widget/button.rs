@@ -91,7 +91,7 @@ where
     )
 }
 
-pub fn app_bar<'a, Message>(label: &'a str, icon: FluentIcon) -> Button<Message>
+pub fn app_bar<'a, Message>(label: &'a str, icon: FluentIcon) -> Button<'a, Message>
 where
     Message: 'a + Clone,
 {

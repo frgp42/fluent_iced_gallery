@@ -5,7 +5,7 @@ use iced::{
         checkbox::Icon,
         text::{LineHeight, Shaping},
     },
-    Font, Pixels,
+    Pixels,
 };
 
 #[derive(Clone, Copy, Debug, PartialEq)]
@@ -31,7 +31,7 @@ fn base<'a, Message>(
     code_point: char,
 ) -> Checkbox<'a, Message> {
     let check_mark = Icon {
-        font: Font::with_name("en Segoe UI"),
+        font: font::SEGOE_FLUENT_ICONS,
         code_point,
         size: Some(Pixels(14.0)),
         line_height: LineHeight::default(),

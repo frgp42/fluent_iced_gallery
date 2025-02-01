@@ -37,7 +37,7 @@ pub mod button {
         Length, Padding,
     };
 
-    pub fn large<'a, Message>(label: &'a str, icon: FluentIcon) -> Button<Message>
+    pub fn large<'a, Message>(label: &'a str, icon: FluentIcon) -> Button<'a, Message>
     where
         Message: 'a + Clone,
     {

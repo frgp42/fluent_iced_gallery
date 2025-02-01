@@ -11,7 +11,7 @@ use gallery::Gallery;
 use iced::window::{icon, Settings};
 
 fn main() -> iced::Result {
-    let icon = icon::from_file_data(include_bytes!("..\\assets\\images\\logo.png"), None);
+    let icon = icon::from_file_data(include_bytes!("../assets/images/logo.png"), None);
 
     iced::application("Fluent Iced Gallery", Gallery::update, Gallery::view)
         .subscription(Gallery::subscription)

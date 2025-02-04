@@ -19,10 +19,10 @@ where
     T: std::fmt::Display + Clone,
 {
     ComboBox::new(state, placeholder, selection, on_selected)
-        .font(font::SEGOE)
+        .font(font::UI_REGULAR.clone().into())
         .line_height(LineHeight::Absolute(Pixels(20.0)))
         .icon(Icon {
-            font: font::SEGOE_FLUENT_ICONS,
+            font: iced::Font::from(font::FLUENT_ICONS.clone()),
             code_point: FluentIcon::ChevronDown.codepoint(),
             size: Some(10.into()),
             spacing: 4.0,

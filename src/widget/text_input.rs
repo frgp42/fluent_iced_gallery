@@ -13,7 +13,7 @@ where
     Message: 'a + Clone,
 {
     TextInput::new(placeholder, value)
-        .font(font::SEGOE)
+        .font(font::UI_REGULAR.clone().into())
         .line_height(LineHeight::Absolute(Pixels(20.0)))
         .size(14)
         .padding(Padding {

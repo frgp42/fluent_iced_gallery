@@ -1,3 +1,9 @@
+ # ⚠️ ARCHIVED
+
+This repository is not active and has been archived.
+
+If you would like a Fluent 2 inspired theme for your [Iced] project then head over to the [iced-fluent-theme](https://crates.io/crates/iced-fluent-theme) crate.
+ 
 # Fluent Iced Gallery
 
 A small app inspired by the [WinUI 3 Gallery] which uses [Iced], a cross-platform GUI library written in Rust. It showcases a sample of widgets styled according to fluent design principles and served as an excuse to learn Rust and Iced.

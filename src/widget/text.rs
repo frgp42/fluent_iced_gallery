@@ -22,38 +22,38 @@ impl iced::widget::text::Catalog for Theme {
 
 pub fn caption1<'a>(fragment: impl text::IntoFragment<'a>) -> Text<'a> {
     Text::new(fragment)
-        .font(font::SEGOE)
+        .font(font::UI_REGULAR.clone())
         .size(12)
         .line_height(LineHeight::Absolute(Pixels(16.0)))
 }
 
 pub fn body1<'a>(fragment: impl text::IntoFragment<'a>) -> Text<'a> {
     Text::new(fragment)
-        .font(font::SEGOE)
+        .font(font::UI_REGULAR.clone())
         .size(14)
         .line_height(LineHeight::Absolute(Pixels(20.0)))
 }
 
 pub fn bold<'a>(fragment: impl text::IntoFragment<'a>) -> Text<'a> {
-    body1(fragment).font(font::SEGOE_BOLD)
+    body1(fragment).font(font::UI_BOLD.clone())
 }
 
 pub fn subtitle1<'a>(fragment: impl text::IntoFragment<'a>) -> Text<'a> {
     Text::new(fragment)
-        .font(font::SEGOE_SEMIBOLD)
+        .font(font::UI_SEMIBOLD.clone())
         .size(20)
         .line_height(LineHeight::Absolute(Pixels(26.0)))
 }
 
 pub fn title2<'a>(fragment: impl text::IntoFragment<'a>) -> Text<'a> {
     Text::new(fragment)
-        .font(font::SEGOE_SEMIBOLD)
+        .font(font::UI_SEMIBOLD.clone())
         .size(28)
         .line_height(LineHeight::Absolute(Pixels(36.0)))
 }
 
 pub fn icon<'a>(codepoint: char) -> Text<'a> {
     text(codepoint)
-        .font(font::SEGOE_FLUENT_ICONS)
+        .font(font::FLUENT_ICONS.clone())
         .shaping(iced::widget::text::Shaping::Advanced)
 }

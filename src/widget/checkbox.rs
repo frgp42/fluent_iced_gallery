@@ -31,7 +31,7 @@ fn base<'a, Message>(
     code_point: char,
 ) -> Checkbox<'a, Message> {
     let check_mark = Icon {
-        font: font::SEGOE_FLUENT_ICONS,
+        font: iced::Font::from(font::FLUENT_ICONS.clone()),
         code_point,
         size: Some(Pixels(14.0)),
         line_height: LineHeight::default(),
@@ -40,7 +40,7 @@ fn base<'a, Message>(
 
     Checkbox::new(label, is_checked)
         .size(20)
-        .font(font::SEGOE)
+        .font(font::UI_REGULAR.clone())
         .text_size(14)
         .text_line_height(LineHeight::Absolute(Pixels(20.0)))
         .icon(check_mark)

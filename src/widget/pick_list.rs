@@ -22,11 +22,11 @@ where
     Message: Clone,
 {
     PickList::new(options, selected, on_select)
-        .font(font::SEGOE)
+        .font(font::UI_REGULAR.clone())
         .text_size(14)
         .text_line_height(LineHeight::Absolute(Pixels(20.0)))
         .handle(Handle::Static(Icon {
-            font: font::SEGOE_FLUENT_ICONS,
+            font: iced::Font::from(font::FLUENT_ICONS.clone()),
             code_point: FluentIcon::ChevronDown.codepoint(),
             size: Some(10.into()),
             line_height: LineHeight::default(),
